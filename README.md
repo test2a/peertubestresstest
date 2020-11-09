@@ -35,3 +35,14 @@ if the server is under load, like the network connection is saturated or disk us
 3. test involving multiple resolutions, multiple clients and multiple downloads and transcoding jobs running at once to simulate a "real world" instance.
 4. remote viewing from a third party instance.  if we have federation enabled, how much our bandwidth and disk IO is used or is it same as viewing from local instance?
 
+## live streaming tests
+
+taken from from https://github.com/Chocobozzz/PeerTube/pull/3250#issue-515433569
+1. Real tests to adjust HLS playlist parameters (segments in the playlist, segments duration etc)
+2. Adjust RTMP server params (timeout etc)
+3. Real tests to know if just muxing works in most cases
+4. Real tests to adjust live transcoding settings
+5. (Angular bug?) When the player automatically plays a live, the *This live has not started yet. * message is not hidden
+6. Live notifications for admins? (a live started etc)
+
+
